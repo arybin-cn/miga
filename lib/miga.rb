@@ -1,4 +1,4 @@
-require "miga/version"
+require 'miga/version'
 
 module Miga
   class Error < StandardError; end
