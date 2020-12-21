@@ -1,8 +1,10 @@
 # Miga
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/miga`. To experiment with that code, run `bin/console` for an interactive prompt.
+Miga comes from abbr of "MIGrate Address", it's a ruby gem that utilize [udis86ext](https://github.com/arybin-cn/udis86ext) to provide some useful apis and a REPL tool to help analyse binary dump files. Particularly, Miga aims at migrating marked addresses from old dump file to the new one by automatically generating and verifying instruction-level signatures.
 
-TODO: Delete this and the text above, and describe your gem
+## Instruction Set
+
+Currently support x86/x86-64 instruction set
 
 ## Installation
 
@@ -20,10 +22,6 @@ Or install it yourself as:
 
     $ gem install miga
 
-## Usage
-
-TODO: Write usage instructions here
-
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
@@ -32,4 +30,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/miga.
+Bug reports and pull requests are welcome on GitHub at https://github.com/arybin-cn/miga.
