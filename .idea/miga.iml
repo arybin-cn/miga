@@ -5,5 +5,72 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.17.3, RVM: ruby-2.6.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rake (v10.5.0, RVM: ruby-2.6.6) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rake-compiler (v1.1.1, RVM: ruby-2.6.6) [gem]" level="application" />
+  </component>
+  <component name="RakeTasksCache">
+    <option name="myRootTask">
+      <RakeTaskImpl id="rake">
+        <subtasks>
+          <RakeTaskImpl description="Build miga-0.1.0.gem into the pkg directory" fullCommand="build" id="build" />
+          <RakeTaskImpl description="Remove any temporary products" fullCommand="clean" id="clean" />
+          <RakeTaskImpl description="Remove any generated files" fullCommand="clobber" id="clobber" />
+          <RakeTaskImpl description="Compile all the extensions" fullCommand="compile" id="compile" />
+          <RakeTaskImpl id="compile">
+            <subtasks>
+              <RakeTaskImpl description="Compile miga" fullCommand="compile:miga" id="miga" />
+              <RakeTaskImpl id="miga">
+                <subtasks>
+                  <RakeTaskImpl description="" fullCommand="compile:miga:x86_64-darwin19" id="x86_64-darwin19" />
+                </subtasks>
+              </RakeTaskImpl>
+              <RakeTaskImpl description="" fullCommand="compile:x86_64-darwin19" id="x86_64-darwin19" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl description="Build and install miga-0.1.0.gem into system gems" fullCommand="install" id="install" />
+          <RakeTaskImpl id="install">
+            <subtasks>
+              <RakeTaskImpl description="Build and install miga-0.1.0.gem into system gems without network access" fullCommand="install:local" id="local" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl description="Create tag v0.1.0 and build and push miga-0.1.0.gem to rubygems.org" fullCommand="release[remote]" id="release[remote]" />
+          <RakeTaskImpl id="copy">
+            <subtasks>
+              <RakeTaskImpl id="miga">
+                <subtasks>
+                  <RakeTaskImpl id="x86_64-darwin19">
+                    <subtasks>
+                      <RakeTaskImpl description="" fullCommand="copy:miga:x86_64-darwin19:2.6.6" id="2.6.6" />
+                    </subtasks>
+                  </RakeTaskImpl>
+                </subtasks>
+              </RakeTaskImpl>
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl description="" fullCommand="default" id="default" />
+          <RakeTaskImpl description="" fullCommand="lib" id="lib" />
+          <RakeTaskImpl description="" fullCommand="lib/miga" id="lib/miga" />
+          <RakeTaskImpl description="" fullCommand="lib/miga/miga.bundle" id="lib/miga/miga.bundle" />
+          <RakeTaskImpl description="" fullCommand="release" id="release" />
+          <RakeTaskImpl id="release">
+            <subtasks>
+              <RakeTaskImpl description="" fullCommand="release:guard_clean" id="guard_clean" />
+              <RakeTaskImpl description="" fullCommand="release:rubygem_push" id="rubygem_push" />
+              <RakeTaskImpl description="" fullCommand="release:source_control_push" id="source_control_push" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl description="" fullCommand="tmp" id="tmp" />
+          <RakeTaskImpl description="" fullCommand="tmp/x86_64-darwin19" id="tmp/x86_64-darwin19" />
+          <RakeTaskImpl description="" fullCommand="tmp/x86_64-darwin19/miga" id="tmp/x86_64-darwin19/miga" />
+          <RakeTaskImpl description="" fullCommand="tmp/x86_64-darwin19/miga/2.6.6" id="tmp/x86_64-darwin19/miga/2.6.6" />
+          <RakeTaskImpl description="" fullCommand="tmp/x86_64-darwin19/miga/2.6.6/Makefile" id="tmp/x86_64-darwin19/miga/2.6.6/Makefile" />
+          <RakeTaskImpl description="" fullCommand="tmp/x86_64-darwin19/miga/2.6.6/miga.bundle" id="tmp/x86_64-darwin19/miga/2.6.6/miga.bundle" />
+          <RakeTaskImpl description="" fullCommand="tmp/x86_64-darwin19/stage" id="tmp/x86_64-darwin19/stage" />
+          <RakeTaskImpl description="" fullCommand="tmp/x86_64-darwin19/stage/lib" id="tmp/x86_64-darwin19/stage/lib" />
+          <RakeTaskImpl description="" fullCommand="tmp/x86_64-darwin19/stage/lib/miga" id="tmp/x86_64-darwin19/stage/lib/miga" />
+        </subtasks>
+      </RakeTaskImpl>
+    </option>
   </component>
 </module>
