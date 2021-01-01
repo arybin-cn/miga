@@ -2,6 +2,9 @@
 
 Miga comes from abbr of "MIGrate Address", it's a ruby gem that utilize [udis86ext](https://github.com/arybin-cn/udis86ext) to provide some useful apis and a REPL tool to help analyse binary dump files. Particularly, Miga aims at migrating marked addresses from old dump file to the new one by automatically generating and verifying instruction-level signatures.
 
+Still under developing, simple demo picture:
+![image](https://github.com/arybin-cn/miga/blob/master/demo.png)
+
 ## Instruction Set
 
 Currently support x86/x86-64 instruction set
